@@ -1,5 +1,6 @@
 import Header from "@/components/Header/Header";
 import Personal from "@/components/Personal/Personal";
+import SkillSwiper from "@/components/SkillSection/SkillSection";
 
 export default function Portfolio() {
   const navs = [
@@ -19,9 +20,12 @@ export default function Portfolio() {
       id: 4,
       name: "Contact",
     },
-  ]
-  return <section className="bg-white dark:bg-gray-950 pl-10 pr-10 pt-6 pb-6">
-    <Header navs={navs} />
-    <Personal sectionId={navs[0].name} />
-  </section>
+  ];
+  return (
+    <section className="bg-white pt-6 pr-10 pb-6 pl-10 dark:bg-gray-950">
+      <Header navs={navs} />
+      <Personal sectionId={navs[0].name} />
+      <SkillSwiper />
+    </section>
+  );
 }
