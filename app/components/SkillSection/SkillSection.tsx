@@ -13,8 +13,9 @@ export default function SkillSwiper() {
   ];
   return (
     <div className="flex items-center gap-2.5">
-      {skills.map((skill) => (
+      {skills.map((skill, index) => (
         <motion.div
+          key={index}
           style={{
             backgroundSize: "300% 100%",
           }}
