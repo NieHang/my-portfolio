@@ -2,6 +2,7 @@ import Header from "@/components/Header/Header";
 import Personal from "@/components/Personal/Personal";
 import SkillSection from "@/components/SkillSection/SkillSection";
 import About from "@/components/About/About";
+import Experience from "@/components/Experience/Experience";
 
 export default function Portfolio() {
   const navs = [
@@ -28,6 +29,7 @@ export default function Portfolio() {
       <Personal sectionId={navs[0].name} />
       <SkillSection />
       <About sectionId={navs[1].name} />
+      <Experience sectionId={navs[2].name} />
     </section>
   );
 }
