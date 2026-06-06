@@ -51,9 +51,8 @@ export default function About({ sectionId }: { sectionId: string }) {
       <div className="flex items-center justify-center gap-20">
         <div className="grid flex-2 grid-cols-2 gap-6">
           {imgs.map((img, index) => (
-            <div>
+            <div key={index}>
               <motion.a
-                key={index}
                 whileHover={{
                   scale: 1.05,
                 }}
