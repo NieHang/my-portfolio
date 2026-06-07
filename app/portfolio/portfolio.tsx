@@ -3,7 +3,6 @@ import Personal from "@/components/Personal/Personal";
 import SkillSection from "@/components/SkillSection/SkillSection";
 import About from "@/components/About/About";
 import Experience from "@/components/Experience/Experience";
-import AI from "@/components/AI/AI";
 import Contact from "@/components/Contact/Contact";
 
 export default function Portfolio() {
@@ -36,7 +35,6 @@ export default function Portfolio() {
       <SkillSection />
       <About sectionId={navs[1].name} />
       <Experience sectionId={navs[2].name} />
-      <AI sectionId={navs[3].name} />
       <Contact sectionId={navs[4].name} />
     </section>
   );

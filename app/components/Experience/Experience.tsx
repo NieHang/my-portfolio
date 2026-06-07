@@ -10,7 +10,7 @@ export default function Experience({ sectionId }: { sectionId: string }) {
       time: "2019 - Present",
     },
     {
-      title: "Junior Web Developer at TechStart",
+      title: "Junior Web Developer",
       desc: "Developed wechat mini program for a local restaurants and shops, which help their customers make orders more efficiently.",
       time: "2018 - 2019",
     },
