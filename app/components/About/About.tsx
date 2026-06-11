@@ -6,7 +6,7 @@ import PolyImg from "@/assets/polymarket-liquidity.png";
 import VirtualImg from "@/assets/virtual-launch.png";
 import clsx from "clsx";
 
-export default function About({ sectionId }: { sectionId: string }) {
+export default function About() {
   const imgs = [
     {
       src: OpenriceImg,
@@ -27,7 +27,7 @@ export default function About({ sectionId }: { sectionId: string }) {
       alt: "Polymarket",
       href: "https://polymarket.com",
       title: "POLYMARKET_LIQUIDITY",
-      desc: "This is a tool that collects liquidity reward from polymarket",
+      desc: "This is a tool that collects liquidity reward from polymarket. It helps me post orders and cancel orders automatically, which save me a lot of time and effort.",
     },
     {
       src: VirtualImg,
@@ -38,7 +38,7 @@ export default function About({ sectionId }: { sectionId: string }) {
     },
   ];
   return (
-    <section id={sectionId} className="mt-10 flex flex-col">
+    <section className="mt-10 flex flex-col">
       <BorderButton>About Me</BorderButton>
       <div className="mt-5 mb-10 flex items-end justify-between gap-40">
         <div className="flex-2 text-4xl">

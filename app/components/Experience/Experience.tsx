@@ -2,7 +2,7 @@ import BorderButton from "@/components/common/BorderButton";
 
 import clsx from "clsx";
 
-export default function Experience({ sectionId }: { sectionId: string }) {
+export default function Experience() {
   const experiences = [
     {
       title: "Web Developer at Openrice",
@@ -16,7 +16,7 @@ export default function Experience({ sectionId }: { sectionId: string }) {
     },
   ];
   return (
-    <section id={sectionId} className="mt-10 flex flex-col">
+    <section className="mt-10 flex flex-col">
       <BorderButton>Experience</BorderButton>
       <div className="mt-5 mb-10 flex items-end justify-between gap-40">
         <div className="flex-2 text-4xl">

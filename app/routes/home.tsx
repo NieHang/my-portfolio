@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import Portfolio from "@/portfolio/portfolio";
+import Portfolio from "@/views/portfolio/portfolio";
 
 export function meta({}: Route.MetaArgs) {
   return [

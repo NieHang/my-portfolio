@@ -24,14 +24,11 @@ const contactLinks = [
   },
 ];
 
-export default function Contact({ sectionId }: { sectionId: string }) {
+export default function Contact() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section
-      id={sectionId}
-      className="relative mt-10 flex flex-col gap-8 bg-black p-10 md:flex-row md:items-start md:justify-between"
-    >
+    <section className="relative mt-10 flex flex-col gap-8 bg-black p-10 md:flex-row md:items-start md:justify-between">
       <div className="max-w-4xl text-6xl leading-none font-medium text-white md:text-8xl">
         <div>Let's</div>
         <div>Connect</div>

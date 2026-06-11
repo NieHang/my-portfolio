@@ -1,11 +1,29 @@
 import PersonalIcon from "@/assets/common/personal-icon.svg";
 import clsx from "clsx";
 
-export default function Header({
-  navs,
-}: {
-  navs: { id: number; name: string }[];
-}) {
+export default function Header() {
+  const navs = [
+    {
+      id: 1,
+      name: "Personal",
+    },
+    {
+      id: 2,
+      name: "About",
+    },
+    {
+      id: 3,
+      name: "Experiences",
+    },
+    {
+      id: 4,
+      name: "AI",
+    },
+    {
+      id: 5,
+      name: "Contact",
+    },
+  ];
   function triggerEmail() {
     const emailTo = "niehang77@gmail.com";
     const subject = encodeURIComponent("Hello from my site!");
@@ -19,7 +37,7 @@ export default function Header({
       className={clsx(
         "sticky top-0",
         "flex items-center justify-between",
-        "mb-10 bg-white py-5",
+        "mb-10 bg-white px-10 py-5",
       )}
     >
       <div className="color-gray-950 dark:color-white flex items-center text-base">

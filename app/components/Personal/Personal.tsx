@@ -1,8 +1,8 @@
 import CatImg from "@/assets/cat.jpg";
 
-export default function Personal({ sectionId }: { sectionId: string }) {
+export default function Personal() {
   return (
-    <section id={sectionId} className="mb-10 flex items-end justify-between">
+    <section className="mb-10 flex items-end justify-between">
       <div className="flex flex-2 flex-col align-bottom">
         <h1 className="text-9xl text-gray-950 dark:text-white">Web</h1>
         <h1 className="text-9xl text-gray-950 dark:text-white">Developer</h1>
